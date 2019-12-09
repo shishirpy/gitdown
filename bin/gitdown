@@ -200,9 +200,10 @@ while ($line < @input) {
             writeln_images ($_);
         }
         writeln_images ("</pre>");
-        writeln ("<center>");
-        writeln ("<img src=\"$imgpath$self\_$diagram.png\" alt=\"$diagram\">");
-        writeln ("</center>");
+        # writeln ("<center>");
+        # writeln ("<img src=\"$imgpath$self\_$diagram.png\" alt=\"$diagram\">");
+        # writeln ("</center>");
+        writeln("![$diagram](images/$diagram.png)")
     }
     else {
         #   Normal text
